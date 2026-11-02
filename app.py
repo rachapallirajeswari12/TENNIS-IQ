@@ -107,21 +107,27 @@ for key, value in {
 # ---------------- DATABASE FUNCTIONS --------------------
 
 def get_connection(config=None):
-    config = config or st.session_state.db_config
+    if config is None:
+        try:
+            config = dict(st.secrets["postgresql"])
+        except Exception:
+            config = st.session_state.get("db_config")
+
     if not config:
-        raise ValueError("Please connect to PostgreSQL first.")
+        raise ValueError("Please configure database connection.")
 
     return psycopg2.connect(
         host=config["host"],
-        port=config["port"],
-        database=config["database"],
+        port=int(config.get("port", 5432)),
+        database=config.get("database", "postgres"),
         user=config["user"],
         password=config["password"],
-        connect_timeout=5
+        sslmode=config.get("sslmode", "require"),
+        connect_timeout=10
     )
 
 
-def fetch_data(query, params=None):
+   def fetch_data(query, params=None):
     conn = get_connection()
     try:
         with conn.cursor() as cursor:
