@@ -106,6 +106,7 @@ for key, value in {
 
 # ---------------- DATABASE FUNCTIONS --------------------
 
+
 def get_connection(config=None):
     if config is None:
         try:
@@ -127,7 +128,7 @@ def get_connection(config=None):
     )
 
 
-   def fetch_data(query, params=None):
+def fetch_data(query, params=None):
     conn = get_connection()
     try:
         with conn.cursor() as cursor:
@@ -144,6 +145,7 @@ def get_connection(config=None):
 def get_count(query, params=None):
     data = fetch_data(query, params)
     return int(data.iloc[0, 0]) if not data.empty else 0
+
 
 
 def get_options(query, params=None):
