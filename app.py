@@ -399,12 +399,23 @@ if "sql_query_name" not in st.session_state:
     st.session_state.sql_query_name = None
 
 
+
 # ============================================================
 # SUPABASE CLOUD CONFIGURATION
 # ============================================================
 
 def get_cloud_config():
     try:
+        st.write(
+            "DEBUG - Secrets sections:",
+            list(st.secrets.keys())
+        )
+
+        st.write(
+            "DEBUG - PostgreSQL section found:",
+            "postgresql" in st.secrets
+        )
+
         config = dict(st.secrets["postgresql"])
 
         required_keys = [
