@@ -1,0 +1,48 @@
+STREAMLIT DASHBOARD DEVELOPMENT
+
+## Project Title
+TENNIS IQ – Game Analytics: Unlocking Tennis Data with Sportradar API
+
+## Role
+Dashboard Development and Data Visualization
+
+## Tools and Technologies
+- Python
+- Streamlit
+- Pandas
+- Plotly
+- PostgreSQL
+- Supabase
+
+## Dashboard Development
+Developed an interactive web dashboard using Streamlit to analyze tennis data stored in the PostgreSQL database.
+
+## Dashboard Pages
+
+1. Overview – Displays important project KPIs and summary information.
+2. Competition Analysis – Analyzes tennis competitions and categories.
+3. Venue Analysis – Displays venue-related information and country analysis.
+4. Player Rankings – Displays player rankings and ranking points.
+5. SQL Insights – Presents insights generated using SQL queries.
+6. Data Quality – Shows data validation information.
+7. Database Explorer – Helps explore database records.
+
+## Key Features
+- Interactive dashboard navigation.
+- KPI cards for important statistics.
+- Charts and graphs using Plotly.
+- PostgreSQL database connectivity.
+- Data analysis using Pandas.
+- Interactive tables and visualizations.
+
+## Database Summary
+- Categories: 18
+- Competitions: 6,699
+- Complexes: 780
+- Venues: 4,139
+- Competitors: 1,000
+- Competitor Rankings: 1,000
+- Total Records: 13,636
+
+## Conclusion
+The TENNIS IQ dashboard provides an interactive way to explore tennis data, analyze competitions, study player rankings, and understand important insights through visualizations.

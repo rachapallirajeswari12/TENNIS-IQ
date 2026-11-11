@@ -1,0 +1,59 @@
+# TENNIS IQ – MEMBER 3
+## SQL Analysis and Data Insights
+
+### Project Overview
+Project Name: TENNIS IQ – Game Analytics: Unlocking Tennis Data with Sportradar API
+
+My Role: Member 3 – SQL Analysis and Data Insights
+
+### Important SQL Insights
+
+1. **Competition Analysis**
+   - Total competitions: 6,699
+   - Total categories: 18
+   - Analyzed competitions by gender and type.
+
+2. **Venue Analysis**
+   - Total venues: 4,139
+   - Total complexes: 780
+   - USA has the highest number of venues: 689.
+
+3. **Competitor Analysis**
+   - Total competitors: 1,000
+   - Competitor country distribution: 74 countries.
+
+4. **Player Ranking Analysis**
+   - Total ranking records: 1,000
+   - Highest ranking points: 11,000
+   - Average ranking points: 724.06.
+
+5. **Gender Analysis**
+   - Men's ranking records: 500
+   - Women's ranking records: 500.
+
+6. **Ranking Movement Analysis**
+   - Analyzed players with zero, positive, and negative ranking movements.
+   - Used GROUP BY to summarize ranking movements.
+
+7. **Top Player Analysis**
+   - Used ORDER BY and LIMIT to identify top-ranked players.
+   - Used RANK() to identify top five players by gender.
+
+### SQL Concepts Used
+- SELECT
+- WHERE
+- JOIN
+- GROUP BY
+- ORDER BY
+- COUNT()
+- MAX()
+- MIN()
+- AVG()
+- RANK()
+
+### Conclusion
+SQL queries helped us analyze competitions, venues, competitors, and player rankings.
+
+The identified insights provide useful information for the TENNIS IQ Streamlit dashboard.
+
+Prepared by: Member 3 – SQL Analysis and Data Insights

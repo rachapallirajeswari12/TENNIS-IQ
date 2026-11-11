@@ -1,0 +1,104 @@
+DATABASE DESIGN AND SQL ANALYSIS
+
+## Project Title
+
+**TENNIS IQ – Game Analytics: Unlocking Tennis Data with Sportradar API**
+
+
+## 1. Responsibilities :
+
+- Designing the PostgreSQL database.
+- Creating six relational tables.
+- Defining primary keys and foreign key relationships.
+- Loading and organizing the tennis data.
+- Writing SQL queries for data validation and analysis.
+- Verifying database records and relationships.
+
+## 2. Database Tables
+
+The database contains six tables:
+
+| Table Name | Records | Description |
+|---|---:|---|
+| categories | 18 | Competition categories |
+| competitions | 6,699 | Tennis competitions |
+| complexes | 780 | Sports complexes |
+| venues | 4,139 | Venue information |
+| competitor | 1,000 | Player information |
+| competitor_rankings | 1,000 | Doubles player rankings |
+
+**Total Records: 13,636**
+
+## 3. Primary Keys and Foreign Keys
+
+Primary keys uniquely identify records in each table.
+
+Foreign key relationships:
+
+1. competitions.category_id → categories.category_id
+2. venues.complex_id → complexes.complex_id
+3. competitor_rankings.competitor_id → competitor.competitor_id
+
+These relationships maintain data consistency between related tables.
+
+## 4. ER Diagram
+
+Created an Entity Relationship Diagram using pgAdmin 4.
+
+The ER diagram represents all six database tables and their relationships.
+
+File name: Member_2_ER_Diagram.pgerd
+
+## 5. Data Validation
+
+Performed SQL checks to verify database quality.
+
+Validation results:
+- Duplicate category IDs: 0
+- Missing category references: 0
+- Missing complex references: 0
+- Missing competitor references: 0
+- Missing competitor country codes: 50
+
+The database records and foreign key relationships were checked.
+
+## 6. SQL Analysis
+
+Wrote SQL queries to analyze the tennis dataset.
+
+### Competition Analysis
+- Total competitions.
+- Competitions by category.
+- Competitions by gender.
+- Competitions by type.
+- Parent and child competitions.
+
+### Venue Analysis
+- Total venues and complexes.
+- Venues by country.
+- Venues in each complex.
+- Complexes containing multiple venues.
+- Top countries by venue count.
+
+### Player Rankings Analysis
+- Top-ranked players by points.
+- Player ranking movements.
+- Ranking points by country.
+- Latest available ranking week.
+- Men's and women's ranking analysis.
+- Top five players by gender.
+
+## 7. Tools Used
+
+- PostgreSQL
+- pgAdmin 4
+- SQL
+- Entity Relationship Diagram (ERD)
+
+## 8. Conclusion
+
+As Member 2, I designed the relational database, established table relationships, verified data quality, and developed SQL queries for tennis data analysis.
+
+The database provides a structured foundation for the TENNIS IQ dashboard and helps the team analyze competitions, venues, players, and rankings.
+
+**Prepared by: Member 2 – Database Design and SQL Analysis**

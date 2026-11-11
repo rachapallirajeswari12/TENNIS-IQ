@@ -1,0 +1,122 @@
+# TENNIS IQ – GAME ANALYTICS
+## Member 3 – SQL Analysis and Data Insights
+### Presentation Script
+
+### 1. Introduction
+
+Good morning everyone.
+
+Today, I am going to explain my contribution to our major team project, TENNIS IQ – Game Analytics using Sportradar Tennis Data.
+
+My role in this project is SQL Analysis and Data Insights.
+
+Our project uses tennis data to understand competitions, venues, players, and player rankings.
+
+### 2. My Responsibilities
+
+My main responsibilities were:
+
+- Understanding the database tables.
+- Writing SQL queries.
+- Analyzing competitions and categories.
+- Analyzing venues and complexes.
+- Analyzing competitors and player rankings.
+- Finding useful insights from the data.
+- Providing analysis results for the dashboard.
+
+### 3. Competition Analysis
+
+First, I analyzed the competitions data.
+
+Our database contains 6,699 competitions and 18 categories.
+
+Using SQL queries, I analyzed competitions based on their categories and other available details.
+
+I used GROUP BY, COUNT, and ORDER BY to summarize the competition data.
+
+This analysis helps us understand how tennis competitions are distributed.
+
+### 4. Venue and Complex Analysis
+
+Next, I analyzed venues and complexes.
+
+Our database contains 4,139 venues and 780 complexes.
+
+I used JOIN queries to connect venue and complex information.
+
+I also analyzed venues country-wise.
+
+One important insight is that the USA has 689 venues in our dataset.
+
+This analysis helps us understand the geographical distribution of tennis venues.
+
+### 5. Competitor and Ranking Analysis
+
+Next, I worked on competitor and ranking analysis.
+
+Our dataset contains 1,000 competitors and 1,000 ranking records.
+
+The competitor data covers 74 countries.
+
+Using SQL aggregate functions, I calculated ranking statistics.
+
+- Maximum ranking points: 11,000
+- Minimum ranking points: 113
+- Average ranking points: 724.06
+- Men's ranking records: 500
+- Women's ranking records: 500
+
+I also analyzed player ranking movements to identify rank improvements, drops, and players with no change.
+
+### 6. SQL Concepts Used
+
+During this work, I used different SQL concepts:
+
+- SELECT
+- WHERE
+- JOIN
+- GROUP BY
+- ORDER BY
+- COUNT()
+- MAX()
+- MIN()
+- AVG()
+- CASE statements
+- RANK()
+
+These SQL concepts helped me retrieve, organize, summarize, and analyze the tennis data.
+
+### 7. Key Insights
+
+From my analysis, I identified the following insights:
+
+1. The database contains 6,699 competitions.
+2. There are 18 competition categories.
+3. There are 4,139 venues.
+4. There are 780 complexes.
+5. The USA has 689 venues.
+6. The competitor dataset covers 74 countries.
+7. The highest ranking points are 11,000.
+8. There are 500 men's and 500 women's ranking records.
+
+These insights help us understand the tennis dataset more clearly.
+
+### 8. Dashboard Integration
+
+After completing the SQL analysis, the results were useful for our project dashboard.
+
+Our team integrated the database information into the Streamlit application.
+
+The dashboard displays KPIs, tables, charts, and analytical information.
+
+Users can explore tennis competitions, venues, countries, and player rankings.
+
+### 9. Conclusion
+
+Finally, my contribution was focused on SQL analysis and extracting meaningful insights from the tennis database.
+
+This work helped our team understand the data and support the dashboard development.
+
+Through this project, I improved my practical knowledge of PostgreSQL, SQL queries, JOIN operations, aggregate functions, and data analysis.
+
+Thank you.

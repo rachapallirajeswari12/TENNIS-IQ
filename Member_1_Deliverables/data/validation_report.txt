@@ -1,0 +1,10 @@
+TENNIS ANALYTICS - DATA VALIDATION REPORT
+
+Categories: 18 rows, 0 duplicates, 0 missing values
+Competitions: 6699 rows, 0 duplicates, 0 missing values
+Complexes: 780 rows, 0 duplicates, 0 missing values
+Venues: 4139 rows, 0 duplicates, 0 missing values
+Competitors: 1000 rows, 0 duplicates, 50 missing country_code values
+Competitor Rankings: 1000 rows, 0 duplicates, 0 missing values
+
+Missing country_code values are retained as NULL because source data does not provide them.

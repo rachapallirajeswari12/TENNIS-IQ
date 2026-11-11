@@ -1,0 +1,32 @@
+TENNIS ANALYTICS PROJECT
+MEMBER 1 - DATA COLLECTION AND PREPARATION
+
+1. COMPETITIONS JSON
+Total Records: 6699
+Main Key: competitions
+Nested Field: category
+Output CSV: competitions.csv, categories.csv
+
+2. COMPLEXES JSON
+Total Records: 780
+Nested Field: venues
+Total Venues: 4139
+Output CSV: complexes.csv, venues.csv
+
+3. DOUBLES COMPETITOR RANKINGS JSON
+Ranking Groups: ATP and WTA
+ATP Competitors: 500
+WTA Competitors: 500
+Total Competitors: 1000
+Output CSV: competitors.csv, competitor_rankings.csv
+
+DATA VALIDATION
+Duplicate records: 0
+Missing country_code values: 50
+Missing country codes retained as blank/NULL.
+
+TOOLS USED
+Python, Pandas, JSON, CSV
+
+All six CSV files were generated successfully.
+Existing downloaded JSON files were used. No API key was required for this phase.
